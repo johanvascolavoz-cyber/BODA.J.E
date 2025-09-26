@@ -1,0 +1,1297 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Johan & Estefania - Nuestro matrimonio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación de Boda</title>
+
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+
+<style><body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* bloquea scroll */
+    background: #000;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  #contenido {
+    display: none; /* contenido oculto hasta abrir invitación */
+  }
+
+  /* PORTADA */
+  #intro-portal {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:#000;
+    z-index: 9999;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color: gold;
+
+  }
+
+  #intro-portal h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4em;
+    margin-bottom: 20px;
+    text-align: center;
+
+  }
+
+  #intro-portal p {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  #openInvitation {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #d4af37, #b8860b); /* dorado */
+  color: white;
+  font-size: 1.1em;
+  font-family: 'Montserrat', serif;
+  border: 3px solid #fff;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+    transform: rotate(-10deg); 
+     margin-left: 100px;
+}
+
+#openInvitation:hover {
+  transform: scale(1.1);             /* se agranda un poco */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+#openInvitation:active {
+  transform: scale(0.95);            /* se hunde al hacer click */
+}
+
+</body>
+    
+  </style>
+  <!-- PORTADA ANIMADA -->
+<!-- PORTADA INVITACIÓN -->
+<div id="intro-portal" style="
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:url('img/pot4.jpg')no-repeat center center;
+     background-size: cover;
+    z-index:9999;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    overflow:hidden;
+    color: #000080;
+    font-family: 'Montserrat', sans-serif;
+
+">
+    
+  <p style="
+  font-family: 'Great Vibes', cursive;
+  font-size: 7em;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #000080; /* dorado elegante */
+  background: linear-gradient(45deg, #000080, #fff8dc, #000080);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* gradiente en el texto */
+  text-shadow: 0px 1px 0px rgba(0,0,0,0.3); /* relieve */
+  transform: rotate(-5deg);
+  display: inline-block;
+  letter-spacing: 5px; /* separación elegante */
+">
+ J    ♥     E
+</p>
+
+<button id="openInvitation" style="
+  width: 130px;
+  height:130px;
+  border-radius: 50%; 
+  background: radial-gradient(circle at 30% 30%, darkblue 0%, #ffffff 70%, #000080 100%); 
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.5), inset 0 5px 10px rgba(255,255,255,0.2), inset 0 -5px 10px rgba(0,0,0,0.6);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  border:2px solid rgba(0,0,0,0.4);
+">
+
+  <!-- Brillo superior -->
+  <span style="
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    height: 60px;
+    background: radial-gradient(circle at 50% 20%, rgba(255,255,255,0.5) 0%, transparent 80%);
+    border-radius: 50%;
+    pointer-events: none;
+  "></span>
+
+  <!-- Texto central estilo sello -->
+    <span style="
+    position: relative;
+    display: block;
+    font-family: 'Arial', cursive;
+    font-size: 2em;
+    margin-top: 9px;
+    color: #f8e9d2;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  ">
+  🤍
+</span>
+  <span style="
+    position: relative;
+    display: block;
+    font-family: 'Arial', cursive;
+    font-size: 1em;
+    margin-top: center;
+    color: black;
+    letter-spacing: 0px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  ">
+  
+    ABRIR
+  </span>
+
+</button>
+
+<style>
+  /* Animación de presión */
+  #openInvitation:hover {
+    transform: scale(1.05) rotate(-2deg);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.6), inset 0 6px 12px rgba(255,255,255,0.25), inset 0 -6px 12px rgba(0,0,0,0.7);
+  }
+
+  #openInvitation:active {
+    transform: scale(0.95) rotate(2deg);
+  }
+</style>
+
+
+
+
+
+
+
+    <canvas id="confetti" style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;"></canvas>
+</div>
+
+<script>
+// BLOQUEAR SCROLL
+document.body.style.overflow = 'hidden';
+
+// CONFETTI
+const canvas = document.getElementById('confetti');
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+const confettiCount = 1000;
+const confettis = [];
+
+for(let i=0;i<confettiCount;i++){
+    confettis.push({
+        x: Math.random()*canvas.width,
+        y: Math.random()*canvas.height,
+        r: Math.random()*6+9,
+        d: Math.random()*confettiCount,
+        color: '#000080',
+        tilt: Math.floor(Math.random()*10)-10,
+        tiltAngleIncremental: Math.random()*0.07+0.05,
+        tiltAngle: 0
+    });
+}
+
+function drawConfetti(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    confettis.forEach(c=>{
+        ctx.beginPath();
+        ctx.lineWidth = c.r/2;
+        ctx.strokeStyle = c.color;
+        ctx.moveTo(c.x+c.tilt+c.r/4, c.y);
+        ctx.lineTo(c.x+c.tilt, c.y+c.tilt+c.r/4);
+        ctx.stroke();
+    });
+    updateConfetti();
+}
+
+function updateConfetti(){
+    confettis.forEach((c,i)=>{
+        c.tiltAngle += c.tiltAngleIncremental;
+        c.y += (Math.cos(c.d)+3+c.r/2)/2;
+        c.x += Math.sin(c.d);
+        c.tilt = Math.sin(c.tiltAngle)*15;
+
+        if(c.y > canvas.height){
+            confettis[i] = {x: Math.random()*canvas.width, y: -10, r: c.r, d: c.d, color: c.color, tilt: c.tilt, tiltAngleIncremental: c.tiltAngleIncremental, tiltAngle: c.tiltAngle};
+        }
+    });
+}
+
+let confettiInterval;
+function startConfetti(){
+    confettiInterval = setInterval(drawConfetti,20);
+}
+
+window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+});
+
+// BOTÓN ABRIR INVITACIÓN
+document.getElementById('openInvitation').addEventListener('click', () => {
+    startConfetti();
+    
+    const portal = document.getElementById('intro-portal');
+    portal.style.transition = 'opacity 1s ease';
+    portal.style.opacity = 0;
+
+    // DESBLOQUEAR SCROLL
+    document.body.style.overflow = 'auto';
+
+    setTimeout(() => {
+        portal.remove();
+    }, 1000);
+    const audio = document.getElementById('audio');
+    audio.muted = false;   // quitar silencio
+    audio.play();          // reproducir
+
+});
+</script>
+<script>
+  const portal = document.getElementById('intro-portal');
+  const contenido = document.getElementById('contenido');
+
+  document.getElementById('openInvitation').addEventListener('click', () => {
+    // Animación de desvanecer la portada
+    portal.style.transition = 'opacity 1s';
+    portal.style.opacity = 0;
+
+    setTimeout(() => {
+      portal.style.display = 'none'; // remover la portada
+      contenido.style.display = 'block'; // mostrar contenido
+      document.body.style.overflow = 'auto'; // habilitar scroll
+    }, 1000);
+  });
+</script>
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="font-secondary text-white mb-n2">Johan <span class="text-primary">&</span> Estefania</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto py-0">
+                <a href="#home" class="nav-item nav-link active">INICIO</a>
+                <a href="#about" class="nav-item nav-link">LOS NOVIOS</a>
+                <a href="#story" class="nav-item nav-link">HISTORIA</a>
+                <a href="#gallery" class="nav-item nav-link">GALERIA</a>
+            </div>
+            <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+                <h1 class="font-secondary text-white mb-n2">Johan <span class="text-primary">&</span> Estefania</h1>
+            </a>
+            <div class="navbar-nav mr-auto py-0">
+                <a href="#event" class="nav-item nav-link">EVENTO</a>
+                <a href="#family" class="nav-item nav-link">VESTIMENTA</a>
+                
+                <a href="#rsvp" class="nav-item nav-link">RSVP</a>
+                
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+
+
+
+
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 pb-5" id="home">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item position-relative active" style="height: 102vh; min-height: 1000px;">
+                    <img class="position-absolute w-100 h-100" src="img/Ini1.jpeg" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">"Un si para siempre "</h1>
+                            
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item position-relative" style="height: 102vh; min-height: 1000px;">
+                    <img class="position-absolute w-100 h-100" src="img/Ini2.jpeg" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">"Johan & Estefania"</h1>
+                            
+    
+</div>
+                                
+                            </div>
+                           
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev justify-content-start" href="#header-carousel" data-slide="prev">
+                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+                    <span class="carousel-control-prev-icon mt-3"></span>
+                </div>
+            </a>
+            <a class="carousel-control-next justify-content-end" href="#header-carousel" data-slide="next">
+                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+                    <span class="carousel-control-next-icon mt-3"></span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+<div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;"> FAMILIA Y AMIGOS</h6>
+                <h1 class="font-secondary display-4">Nos Vamos a Casar</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+
+<div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <h5 class="font-weight-normal text-muted mb-3 pb-3">Nuestra historia es un viaje de amor y complicidad.
+Desde el primer encuentro hasta hoy, hemos compartido risas, sueños y desafíos. Cada momento ha fortalecido nuestro amor y nos ha llevado a este hermoso capítulo.</h5>
+
+<h5>Te invitamos a celebrar con nosotros el inicio de nuestra vida juntos. </h5>
+                </div>
+
+</div>
+
+    <!-- Carousel End -->
+<!-- INICIO CONTEO REGRESIVO -->
+<style>
+    .countdown-container {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+        color:#121F38 ;
+    }
+    .countdown-title {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: blue;
+        text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+    }
+    .countdown {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .countdown-box {
+        background: rgba(0,0,0,0.6);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+        transition: transform 0.3s ease-in-out;
+        min-width: 80px;
+    }
+    .countdown-box:hover {
+        transform: scale(1.1);
+    }
+    .countdown-number {
+        font-size: 2.5em;
+        font-weight: bold;
+        color: gold;
+        animation: pulse 1s infinite alternate;
+    }
+    .countdown-label {
+        font-size: 1em;
+        color: #ccc;
+    }
+    @keyframes pulse {
+        0% { text-shadow: 0 0 5px gold; }
+        100% { text-shadow: 0 0 20px gold; }
+    }
+</style>
+
+<div class="text-center py-5">
+    <h6 class="text-primary">15-NOV-2025</h6>
+   <h1 class="font-secondary display-4">Cuenta Regresiva</h1>
+    <div class="countdown d-flex justify-content-center flex-wrap gap-1">
+        <div class="countdown-box"><div id="days" class="countdown-number">0</div><div>Días</div></div>
+        <div class="countdown-box"><div id="hours" class="countdown-number">0</div><div>Horas</div></div>
+        <div class="countdown-box"><div id="minutes" class="countdown-number">0</div><div>Minutos</div></div>
+        <div class="countdown-box"><div id="seconds" class="countdown-number">0</div><div>Segundos</div></div>
+    </div>
+</div>
+
+
+<script>
+    const targetDate = new Date("November 15, 2025 00:00:00").getTime();
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const distance = targetDate - now;
+        const days = Math.floor(distance / (1000*60*60*24));
+        const hours = Math.floor((distance % (1000*60*60*24))/(1000*60*60));
+        const minutes = Math.floor((distance % (1000*60*60))/(1000*60));
+        const seconds = Math.floor((distance % (1000*60))/1000);
+        document.getElementById("days").textContent = days;
+        document.getElementById("hours").textContent = hours;
+        document.getElementById("minutes").textContent = minutes;
+        document.getElementById("seconds").textContent = seconds;
+        if(distance < 0){
+            clearInterval(interval);
+            document.querySelector(".countdown").innerHTML="<h2>¡El día ha llegado!</h2>";
+        }
+    }
+    const interval = setInterval(updateCountdown,1000);
+</script>
+<!-- FIN CONTEO REGRESIVO -->
+
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Conoce mas de la </h6>
+                <h1 class="font-secondary display-4">Novia & Novio</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row m-0 mb-4 mb-md-0 pb-2 pb-md-0">
+                <div class="col-md-6 p-0 text-center text-md-right">
+                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
+                        <h3 class="mb-3">EL NOVIO</h3>
+                        <p>Cantante, soñador incansable y apasionado por lo que hace. Estudia, trabaja y persigue con disciplina cada meta que se propone. La música siempre ha sido su manera de expresarse y gracias a ella ha aprendido que los sueños se alcanzan con esfuerzo. Johan es alegría, carisma y corazón, pero sobre todo, el hombre que encontró en Estefanía su mayor inspiración.</p>
+                        <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-male text-primary pr-3"></i>Johan</h3>
+                      
+                    </div>
+                </div>
+                <div class="col-md-6 p-0" style="min-height: 650px;">
+                    <img class="position-absolute w-100 h-100" src="img/Johan1.jpeg" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col-md-6 p-0" style="min-height: 500px;">
+                    <img class="position-absolute w-100 h-100" src="img/Estefania1.jpeg" style="object-fit: cover;">
+                </div>
+                <div class="col-md-6 p-0 text-center text-md-left">
+                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
+                        <h3 class="mb-3">LA NOVIA</h3>
+                        <p>Contadora de profesión, entregada a su trabajo y a todo lo que hace con amor. Alegre, detallista y con un brillo especial en su mirada, siempre encuentra motivos para sonreír. Ama profundamente el vallenato, porque en cada acorde encuentra recuerdos y emociones que la hacen vibrar. Estefanía es ternura, fuerza y la mejor compañera de vida que Johan pudo soñar.</p>
+                        <h3 class="font-secondary font-weight-normal text-muted mb-3"><i class="fa fa-female text-primary pr-3"></i>Estefania</h3>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Story Start -->
+    <div class="container-fluid py-5" id="story">
+        <div class="container pt-5 pb-3">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Historia</h6>
+                <h1 class="font-secondary display-4">Nuestra historia de amor</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="container timeline position-relative p-0">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/His1.jpeg" style="min-height: 10px;" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">Primera Foto</h4>
+                            <p class="text-uppercase mb-2">Noviembre del 2013</p>
+                            <p class="m-0">Nuestra historia comenzó con una mirada y un instante que quedó grabado para siempre. Esta fue la primera foto que nos tomamos juntos, sin saber que el destino ya nos estaba uniendo en un camino lleno de amor, sueños y complicidad..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">Mejor recuerdo</h4>
+                            <p class="text-uppercase mb-2">Noviembre del 2018</p>
+                            <p class="m-0">Este aniversario número 6 quedará por siempre en nuestro corazón. Más que un año más juntos, fue un capítulo lleno de recuerdos, sonrisas y amor verdadero. Cada instante vivido nos recuerda que elegimos bien, que seguimos caminando de la mano y que lo mejor aún está por venir.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="img/FOT3.jpeg" style="min-height: 10px;" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/Fot4.jpeg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">Un SI para siempre</h4>
+                            <p class="text-uppercase mb-2">Diciembre del 2024</p>
+                            <p class="m-0">El día de la propuesta quedará para siempre en nuestra memoria. Fue más que un 'sí', fue el comienzo de un sueño compartido, la certeza de que queremos caminar juntos toda la vida. Entre nervios, sonrisas y lágrimas de felicidad, nos elegimos una vez más, pero esta vez para siempre. Ese instante marcó el inicio de la más hermosa aventura: nuestro matrimonio.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">Nuestras Aventuras</h4>
+                            <p class="text-uppercase mb-2">Julio del 2025</p>
+                            <p class="m-0">Cada viaje ha sido mucho más que conocer nuevos lugares; ha sido descubrirnos a nosotros mismos, aprender, reír y soñar juntos. Nuestras aventuras son el reflejo de lo que somos: dos cómplices que encuentran en cada destino una razón más para seguir unidos. Porque no importa a dónde vayamos, lo verdaderamente especial es compartir el camino de la mano.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="img/Fot1.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Story End -->
+
+
+    <!-- Gallery Start -->
+    <div class="container-fluid bg-gel" id="gallery" style="padding: 120px 0; margin: 90px 0;">
+        <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Galeria</h6>
+            <h1 class="font-secondary display-4 text-white">Nuestra Pre-Boda</h1>
+            <i class="far fa-heart text-white"></i>
+        </div>
+        <div class="owl-carousel gallery-carousel">
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gal1.jpeg" alt="">
+                <a href="img/gal1.jpeg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gal2.jpeg" alt="">
+                <a href="img/gal2.jpeg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gal3.jpeg" alt="">
+                <a href="img/gal3.jpeg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/gal4.jpeg" alt="">
+                <a href="img/gal4.jpeg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/fot6.jpeg" alt="">
+                <a href="img/fot6.jpeg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/fot7.jpeg" alt="">
+                <a href="img/fot7.jpeg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/fot8.jpeg" alt="">
+                <a href="img/fot8.jpeg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Gallery End -->
+
+
+    <!-- Event Start -->
+    <div class="container-fluid py-5" id="event">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Invitacion</h6>
+                <h1 class="font-secondary display-4">Nuestra gran celebracion</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center">
+                    <h5 class="font-weight-normal text-muted mb-3 pb-3">Es un honor para nosotros invitar a nuestros amigos y familiares a acompañarnos en la celebración de nuestra boda, el 15 de noviembre de 2025. ¡Los esperamos con alegría y amor</h5>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+  <div class="text-center text-md-right mr-md-3">
+    <img class="img-fluid mb-4" src="img/cre1.png" alt="">
+    <h4 class="mb-3">
+      <i class="fas fa-church" style="color: gold; margin-right:1px;"></i>
+      Ceremonia
+    </h4>
+    <p class="mb-2">
+      <i class="fas fa-map-marker-alt" style="color: crimson; margin-right:1px;"></i>
+      <a href="https://www.google.com/maps/search/?api=1&query=Cra.+13+%2315-50+Pereira+Risaralda" target="_blank"
+         style="color: inherit; text-decoration: none;">
+        Parroquia Sagrada Familia (Corales)
+      </a>
+    </p>
+   
+    <p class="mb-0">
+      <i class="fas fa-clock" style="color: darkblue; margin-right:6px;"></i>
+      5:00 PM
+
+    </p>
+    <!-- Aquí pega el iframe que obtuviste de Maps -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3975.817256304804!2d-75.7477535!3d4.8014087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e387db9cd713efd%3A0x769d6cd61d8ffa83!2sParroquia%20Sagrada%20Familia!5e0!3m2!1ses!2sco!4v1755999370598!5m2!1ses!2sco" 
+      referrerpolicy="no-referrer-when-downgrade"
+          
+     
+      width="390" height="140"
+      style="border:0; border-radius:15px; margin-top:15px;"
+      allowfullscreen="" loading="lazy">
+    </iframe>
+  </div>
+</div>
+
+<div class="col-md-6">
+  <div class="text-center text-md-left ml-md-3">
+    <img class="img-fluid mb-4" src="img/cre2.png" alt="">
+    <h4 class="mb-3">
+      <i class="fas fa-champagne-glasses" style="color: gold; margin-right:6px;"></i>
+      Recepción
+    </h4>
+    <p class="mb-2">
+      <i class="fas fa-map-marker-alt" style="color: crimson; margin-right:6px;"></i>
+      <a href="https://www.google.com/maps/search/?api=1&query=Km+8+via+Altagracia+Finca+La+Moravia" target="_blank"
+         style="color: inherit; text-decoration: none;">
+        Km 8 vía Altagracia – Finca La Moravia
+      </a>
+    </p>
+    <p class="mb-0">
+      <i class="fas fa-clock" style="color: darkblue; margin-right:6px;"></i>
+      7:00 PM
+    </p>
+    <!-- Aquí el iframe correspondiente -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.1209636027847!2d-75.71743359999999!3d4.7490176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e387d568d8e4ce3%3A0xe1d97756e39e0ee!2sFinca%20la%20moravia!5e0!3m2!1ses!2sco!4v1755919711616!5m2!1ses!2sco"
+
+       width="390" height="140"
+      style="border:0; border-radius:15px; margin-top:15px;"
+      allowfullscreen="" loading="lazy">
+
+  </iframe>"
+      
+    </iframe>
+  </div>
+</div>
+
+    <!-- Event End -->
+
+
+    <!--CODIGO DE VESTIMETDA
+
+    -->
+    <div class="container-fluid py-5" id="family">
+        <div class="container pt-5 pb-3">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">INVITADOS</h6>
+                <h1 class="font-secondary display-4">Codigo de Vestimenta</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            
+
+                  <div class="row m-0 mb-4 mb-md-0 pb-2 pb-md-0">
+                <div class="col-md-6 p-0 text-center text-md-right">
+                    <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-5">
+                        <h3 class="mb-3">ETIQUETA FORMAL</h3>
+                        <p>"Nuestra boda será un día lleno de amor y alegría. Por eso te pedimos que nos acompañes con un estilo elegante pero fresco, en tonos claros y suaves que armonicen con el entorno. Queremos que te sientas cómodo, especial y listo para disfrutar cada instante de esta celebración."</p>
+
+                        <p>"Te dejamos nuestra paleta de colores para que tu look combine con nuestra celebración."</p>
+                        
+                      
+                    </div>
+                </div>
+                <div class="col-md-6 p-0" style="min-height: 650px;">
+                    <img class="position-absolute w-100 h-100" src="img/vest2.jpeg" style="object-fit: cover;">
+                </div>
+            </div>
+
+            <!-- llUVIA DE SOBRES-->
+ <div class="container-fluid py-5" id="family">
+        <div class="container pt-5 pb-3">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">REGALOS</h6>
+                <h1 class="font-secondary display-4">Lluvia de Sobres</h1>
+                <i class="far fa-heart text-dark"></i>
+
+            </div>
+ <div class="row justify-content-center">
+  <div class="col-md-6 text-center">
+    <h5 class="font-weight-normal text-muted mb-3 pb-3">
+      Tu presencia es nuestro mejor regalo, pero si deseas hacernos parte de tu cariño, te invitamos a una lluvia de sobres.
+    </h5>
+
+    <!-- Tarjeta elegante Bancolombia -->
+    <div class="card shadow-sm p-4 border-0" style="border-radius:19px;">
+      <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Si Deseas Transferir</h6>
+     <h1 class="font-secondary display-4">Cuenta Bancolombia</h1>
+      <p class="h5 font-weight-bold mb-1" id="numeroCuenta">85117843497</p>
+      <small class="text-muted d-block mb-3">A nombre de: Estefania Rodriguez</small>
+
+      <!-- Botones -->
+      <div class="d-flex justify-content-center gap-2 flex-wrap">
+        <button class="btn btn-outline-primary btn-sm" onclick="copiarCuenta()">
+          Copiar número
+        </button>
+        <!-- Abrir app Bancolombia -->
+        <a href="bancolombia://"
+           class="btn btn-dark btn-sm">
+          Abrir en App
+        </a>
+        <!-- Ir a la web -->
+        <a href="https://svpersonas.apps.bancolombia.com/autenticacion"
+           target="_blank"
+           class="btn btn-primary btn-sm">
+          Ir a Bancolombia Web
+        </a>
+      </div>
+
+      <!-- Mensaje de confirmación -->
+      <div id="mensajeCopiado" class="text-success mt-3" style="display:none;">
+        ✅ Número de cuenta copiado
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function copiarCuenta() {
+  const cuenta = document.getElementById("numeroCuenta").innerText;
+  navigator.clipboard.writeText(cuenta).then(() => {
+    const mensaje = document.getElementById("mensajeCopiado");
+    mensaje.style.display = "block";
+    setTimeout(() => { mensaje.style.display = "none"; }, 3000);
+  });
+}
+</script>
+
+    <!-- RSVP Start -->
+    
+<div class="container py-5" id="rsvp">
+    <div class="section-title text-center mb-5">
+        <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">RSVP</h6>
+        <h1 class="font-secondary display-4">Confirma tu asistencia</h1>
+        <h5 class="font-weight-normal text-muted mb-3 pb-3">
+      👉 “Tu presencia es muy importante para nosotros.💌”
+    </h5>
+        <i class="far fa-heart text-dark"></i>
+        <div class="text-center my-4">
+  <h5 class="text-muted">Por favor confirma tu asistencia antes de:</h5>
+  <h3 class="fecha-limite">📅 25 de OCTUBRE de 2025</h3>
+</div>
+
+<style>
+.fecha-limite {
+  font-weight: bold;
+  color: #003247
+; /* rojo elegante */
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+</style>
+
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <!-- Input para el nombre -->
+            <div class="form-group text-center mb-3">
+                <label for="buscarNombre" class="font-weight-bold mb-2">Ingresa  primer nombre y  primer apellido</label>
+                <input type="text" id="buscarNombre" class="form-control bg-gold text-black border-0 py-4 px-3" placeholder="Tu nombre y apellido"/>
+            </div>
+
+            <!-- Botón para abrir modal -->
+            <div class="text-center mt-3">
+                <button class="btn btn-primary font-weight-bold py-2 px-4" 
+                        onclick="mostrarModal(document.getElementById('buscarNombre').value)">
+                    Confirmar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="whatsappModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content tarjeta-invitacion p-4">
+      <div class="modal-header border-0">
+        <h1 class="titulo-invitacion">Invitación</h1>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body text-center">
+        <h6 id="mensajeInvitado" class="mb-4 fw-bold text-end"></h6>
+        <div id="listaCupos" class="d-flex flex-column align-items-center gap-2"></div>
+        <button type="button" class="btn btn-outline-primary font-white py-2 px-4 mt-3" onclick="confirmarWhatsApp()">
+            📲 Confirmar por WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Tarjeta tipo invitación */
+.tarjeta-invitacion {
+    background: url(img/invt5.jpg);
+    border: 2px solid #000000;
+    border-radius: 20px;
+    color: #333;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    font-family: 'Georgia', serif;
+}
+.btn-close-white { filter: invert(1); }
+.titulo-invitacion {
+    background: linear-gradient(90deg, #000000, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: gold;
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    text-align: center;
+}
+.tarjeta-invitado {
+    background: #fdf1e0;
+    border: 1px dashed #d4af37;
+    color: #333;
+    padding: 12px 16px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.tarjeta-invitado:hover {
+    background-color:#000000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.tarjeta-invitado input[type="checkbox"] { accent-color: #000000; }
+.alerta-modal {
+    background: #ffdddd;
+    color: #a00;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid #a00;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+</style>
+
+<script>
+const invitados  = [
+    {nombre: "Gladis Aguirre", cupos: ["Gladis Aguirre"]},
+    {nombre: "Dario Vasco", cupos: ["Dario Vasco"]},
+    {nombre: "Viviana Vasco", cupos: ["Viviana Vasco","Eduardo"]},
+    {nombre: "Carlos Vasco", cupos: ["Carlos Vasco"]},
+    {nombre: "Jorge Vasco", cupos: ["Jorge Vasco","Flor"]},
+    {nombre: "Diego Vasco", cupos: ["Diego Vasco","Un acompañante"]},
+    {nombre: "Rosalba Vasco", cupos: ["Rosalba Vasco"]},
+    {nombre: "Alcides Aguirre", cupos: ["Alcides Aguirre"]},
+    {nombre: "Alba Aguirre", cupos: ["Alba Aguirre","Fredy Sanchez"]},
+    {nombre: "Eliecer Sanchez", cupos: ["Eliecer Sanchez","Juliana","Adrian"]},
+    {nombre: "Yuliana Sanchez", cupos: ["Yuliana Sanchez","Fredy","Alejandro"]},
+    {nombre: "Dary Aguirre", cupos: ["Dary Aguirre"]},
+    {nombre: "David Sanchez", cupos: ["David Sanchez","Jenny Esposa"]},
+    {nombre: "Carlos Aguirre", cupos: ["Carlos Aguirre","Camilo"]},
+    {nombre: "Kelly Aguirre", cupos: ["Kelly Aguirre","Miriam"]},
+    {nombre: "Sebastian Diaz", cupos: ["Sebastian Diaz"]}, 
+    {nombre: "Leonardo Gomez", cupos: ["Leonardo Gomez"]},
+    {nombre: "Alan Gomez", cupos: ["Alan Gomez"]},
+    {nombre: "Hugo Gomez", cupos: ["Hugo Gomez"]},
+    {nombre: "Hernando Mancera", cupos: ["Hernando Mancera (Pacho)"]},
+    {nombre: "Gladis Henao", cupos: ["Gladis Henao","Mama"]},
+    {nombre: "Farid Perez", cupos: ["Farid Perez"]},
+    {nombre: "Esteban Gomez", cupos: ["Esteban Gomez","Esposa"]},
+    {nombre: "Ricardo Bernal", cupos: ["Ricardo Bernal"]},
+    {nombre: "Juan Rodriguez", cupos: ["Juan Rodriguez"]},
+    {nombre: "Jenny Ruiz", cupos: ["Jenny Ruiz"]},
+    {nombre: "Liliana Giraldo", cupos: ["Liliana Giraldo"]},
+
+    {nombre: "Amanda Vargas", cupos: ["Amanda Vargas"]},
+    {nombre: "Jose Rodriguez", cupos: ["Jose Rodriguez"]},
+    {nombre: "Julian Aristizabal", cupos: ["Julian Aristizabal","Ana Zarate"]},
+    {nombre: "Diana Aristizabal", cupos: ["Omar Velasquez","Jeronimo Patiño","Mathias Velasquez"]},
+    {nombre: "Marina Velasquez", cupos: ["Marina Velasquez"]},
+    {nombre: "Leo Velasquez", cupos: ["Leo Velasquez","Maria Aguirre"]},
+    {nombre: "Diana Uribe", cupos: ["Diana Uribe","William Gallego"]},
+    {nombre: "Asly Rodriguez", cupos: ["Asly Rodriguez"]},
+    {nombre: "Fred Rodriguez", cupos: ["Fred Rodriguez","Paula Tamayo"]},
+     {nombre: "Oscar Rodriguez", cupos: ["Martha Porras","Valetina Rodriguez","David Rodriguez"]},
+     {nombre: "Miguel Restrepo", cupos: ["Miguel Restrepo"]},
+     {nombre: "Angie Acero", cupos: ["Angie Acero"]},
+     {nombre: "Alejandro Rodriguez", cupos: ["Mafe Londoño"]},
+     {nombre: "Cristina Cutiva", cupos: ["Cristina","Acompañante"]},
+     {nombre: "Samanta Barreto", cupos: ["Samanta Barreto","Juan Pablo Salazar"]},
+      {nombre: "Cristina Portela", cupos: ["Cristina Portela","Cristian Carvajal"]},
+      {nombre: "Samuel Barreto", cupos: ["Samuel Barreto"]},
+      {nombre: "Camilo Portela", cupos: ["Camilo Portela","Yuriana"]},
+      {nombre: "Miguel Barreto", cupos: ["Miguel Barreto"]},
+      {nombre: "Amanda Millan", cupos: ["Amanda Millan"]},
+      {nombre: "Gloria Vargas", cupos: ["Alvaro Mayor","Cristopher Mayor"]},
+      {nombre: "Carolina Stanton", cupos: ["Tyler Stanton","Acompañante"]},
+      {nombre: "Jacqueline Mayor", cupos: ["Tomas " ,"Violeta"]},
+      {nombre: "Luis Vargas", cupos: ["Luis Vargas " ,"Rosalba"]},
+      {nombre: "Miryam Vargas", cupos: ["Miryam Vargas" ,"Albeiro Restrepo"]},
+      {nombre: "Daniela Restrepo", cupos: ["Daniela Restrepo" ,"Santiago"]},
+      {nombre: "Carlos Vargas", cupos: ["Carlos Vargas"]},
+      {nombre: "Juan Vargas", cupos: ["Juan David Vargas" ,"Tatiana Quiceno"]},
+      {nombre: "Idalva Vargas", cupos: ["Idalva Vargas" ,"Yensi Silva"]},
+      {nombre: "Milena Londono ", cupos: ["Milena Londono" ,"David Diaz"]},
+      {nombre: "Estela Pineda", cupos: ["Estela Pineda"]},
+      {nombre: "Luisa Vargas", cupos: ["Luisa Vargas"]},
+      {nombre: "Alejandra Vargas", cupos: ["Alejandra Vargas"]},
+      {nombre: "Daniela Toro", cupos: ["Daniela Toro" ,"Nicolas Maceto"]},
+      {nombre: "Melissa Valencia", cupos: ["Melissa Valencia","Santiago lazcano"]},
+      {nombre: "Eliana Restrepo", cupos: ["Eliana Restrepo" ,"Felipe Montoya"]},
+      {nombre: "Eliana Mejia", cupos: ["Eliana Mejia" ,"Ivan Corrales"]},
+      {nombre: "Viviana Sanchez", cupos: ["Viviana Sanchez"]},
+      {nombre: "Oscar Herrera", cupos: ["Oscar Herrera"]},
+      {nombre: "Camila Grajales", cupos: ["Camila Grajales"]},
+      {nombre: "Valentina Garcia", cupos: ["Valentina Garcia","Sebastian Calderon"]},
+      {nombre: "Andres Cardona", cupos: ["Andres Cardona"]},
+      {nombre: "Cristina Lopez", cupos: ["Cristina Lopez"]},
+      {nombre: "Michelle Rodriguez", cupos: ["Cristina Lopez"]},
+      {nombre: "Cinthya Prieto", cupos: ["Cintthya Prieto"]},
+       {nombre: "Francisco Vasquez", cupos: ["Francisco vasquez"]},
+        {nombre: "Jose Conejo", cupos: ["Jose Conejo"]},
+         {nombre: "Valentina Correa", cupos: ["Valentina Correa","Stefania Correa"]},
+          {nombre: "Monica Quintero", cupos: ["Monica Quintero", "Gustavo Quintero"]},
+          {nombre: "Luz Vargas", cupos: ["Luz Vargas", "Margarita"]},
+           {nombre: "Martha Zarria", cupos: ["Martha Zarria", "German Quintero","Nubia Ramirez"]},
+
+
+
+
+
+
+
+
+];
+
+function mostrarModal(nombreInvitado) {
+    const invitadoActual = invitados.find(i => i.nombre.toLowerCase() === nombreInvitado.toLowerCase());
+    const mensaje = document.getElementById("mensajeInvitado");
+    const lista = document.getElementById("listaCupos");
+    lista.innerHTML = "";
+
+    if (invitadoActual) {
+        if (invitadoActual.cupos.length === 1) {
+            // Invitación individual
+            mensaje.innerHTML = `<strong>Hola ${invitadoActual.nombre}, confirma tu asistencia a nuestra celebración:</strong>`;
+        } else {
+            // Invitación con acompañantes
+            mensaje.innerHTML = `<strong>Hola ${invitadoActual.nombre}, marca con quién asistirás a nuestra celebración:</strong>`;
+            invitadoActual.cupos.forEach(c => {
+                const div = document.createElement("div");
+                div.className = "tarjeta-invitado";
+                div.innerHTML = `<span>${c}</span> <input type="checkbox" class="check-invitado" checked />`;
+                lista.appendChild(div);
+            });
+        }
+        const modal = new bootstrap.Modal(document.getElementById('whatsappModal'));
+        modal.show();
+    } else {
+        lista.innerHTML = `<div class="alerta-modal">Por favor, ingresa correctamente Primer Nombre y Primer Apellido.</div>`;
+        mensaje.innerHTML = "";
+        const modal = new bootstrap.Modal(document.getElementById('whatsappModal'));
+        modal.show();
+    }
+}
+
+
+function confirmarWhatsApp() {
+    const checks = document.querySelectorAll(".check-invitado");
+    let nombresConfirmados = [];
+
+    if (checks.length === 0) {
+        // Caso individual (sin checkboxes)
+        const mensaje = `Hola Estefania y Johan, confirmo mi asistencia.`;
+        const numeroWhatsApp = "573207901567"; 
+        window.open(`https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`, "_blank");
+        return;
+    }
+
+    // Caso con acompañantes
+    nombresConfirmados = Array.from(checks)
+        .filter(c => c.checked)
+        .map(c => c.parentElement.querySelector("span").innerText);
+
+    if (nombresConfirmados.length === 0) {
+        alert("Debes seleccionar al menos un invitado.");
+        return;
+    }
+
+    const mensaje = `Hola Estefania y Johan, confirmo asistencia para ${nombresConfirmados.join(" y ")}`;
+    const numeroWhatsApp = "573207901567"; 
+    window.open(`https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`, "_blank");
+}
+
+</script>
+
+<div class="container-fluid py-5" id="family">
+    <div class="container pt-5 pb-3">
+        <div class="section-title position-relative text-center">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">INFORMACIÓN</h6>
+            <h1 class="font-secondary display-4">Protocolos y Recomendaciones para Invitados</h1>
+            <i class="far fa-heart text-dark"></i>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h5 class="font-weight-normal text-muted mb-4">
+                    Queremos que este día tan especial sea inolvidable para todos, por eso te pedimos tener en cuenta lo siguiente:
+                </h5>
+
+                <ul class="list-unstyled text-muted" style="font-size: 18px; line-height: 1.8;">
+                    <li>💌 <strong>Confirmación:</strong> Te pedimos confirmar tu asistencia antes de la fecha indicada, Fecha limite de 30-10-2025.</li>
+                      <li>⏰ <strong>Puntualidad:</strong> La ceremonia inicia a la hora señalada, agradecemos tu llegada con anticipación.</li>
+                      <li>✅ <strong>Exclusividad:</strong> Para mantener nuestra celebración organizada y especial, cada invitación es personal e intransferible. Solo podrán asistir las personas confirmadas en la lista de invitados.</li>
+                    <li>👗 <strong>Código de vestimenta:  </strong>Elegante <strong>Mujeres :</strong>( vestido largo o cóctel) <strong>  Hombres: </strong> traje formal. *(Evitar blanco o marfil, reservados para la novia).* </li>
+                    <li>👶 <strong>Niños:</strong> Para disfrutar plenamente del evento, esta celebración será solo para adultos.Agradecemos su comprensión</li>
+                    <li>📸 <strong>Fotografía:</strong> Tendremos fotógrafo oficial, vive el momento sin preocuparte por grabar.</li>
+                    <li>🎁 <strong>Regalos:</strong> Tu compañía es nuestro mayor regalo, pero si deseas obsequiarnos algo, puedes hacerlo por Transferencia o Efectivo.</li>
+                    <li>📱 <strong>Celulares:</strong> Durante la ceremonia mantenerlos en silencio.</li>
+                    <li>🚌 <strong>Transporte:</strong> La iglesia queda a 20 minutos de la recepción. Hay transporte publico o InDriver/Uber, el trayecto es económico y accesible.</li>
+                    <li>🌙 <strong>Clima:</strong> La recepción será al aire libre, sugerimos llevar un abrigo ligero. *(si aplica)*</li>
+                   
+                    <li>🧾 <strong>CheckList</strong> El ingreso a la recepción será únicamente con nombre registrado en la lista.</li>
+                    <li>📱 <strong>Redes sociales:</strong> Si compartes fotos, usa nuestro hashtag <strong>#BodaJohanYEstefania</strong> para reunir recuerdos.</li>
+                    <li>🥗 <strong>Restricciones alimentarias:</strong> Si tienes alergias o requerimientos especiales, por favor infórmanos con anticipación.</li>
+                    <li>🍾 <strong>Licor:</strong>  Compartiremos una botella por mesa para el brindis y la celebración. Si quieres prolongar la fiesta con tu bebida favorita, puedes traerla contigo.</li>
+                    <li>✨ <strong>Actitud positiva:</strong> Ven con la mejor energía y ganas de celebrar junto a nosotros.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- RSVP End -->
+
+
+    <!-- Footer Start -->
+<div class="container-fluid py-5" id="family">
+    <div class="container pt-5 pb-3">
+        <div class="section-title position-relative text-center">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">NOS VEREMOS PRONTO</h6>
+            <h1 class="font-secondary display-4">💍 Gracias por acompañarnos en este día tan especial 💍</h1>
+            <i class="far fa-heart text-dark"></i>
+        </div>
+
+<!-- Contenedor del reproductor fijo -->
+
+  <div id="player">
+    <span id="song-title">Reproducir Musica</span>
+    <button id="play-btn">▶️</button>
+    <input type="range" id="progress" value="0" min="0" max="100">
+    <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
+    <span id="time">0:00</span>
+  </div>
+</div>
+
+<!-- 🔑 Autoplay activado -->
+<audio id="audio" src="Audio/Audpag.mp3" preload="auto" autoplay muted loop></audio>
+
+<style>
+/* Contenedor fijo en la esquina inferior derecha */
+#player-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: transparent;
+  z-index: 9999;
+  font-family: Arial, sans-serif;
+}
+
+/* Reproductor horizontal */
+#player {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(255,255,255,0.1); /* opcional transparente */
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+/* Título de la canción */
+#song-title {
+  font-weight: bold;
+  max-width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Botón play/pause */
+#play-btn {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  font-size: 18px;
+}
+
+/* Barra de progreso */
+#progress {
+  width: 100px;
+}
+
+/* Barra de volumen */
+#volume {
+  width: 80px;
+}
+
+/* Tiempo */
+#time {
+  font-size: 12px;
+  min-width: 30px;
+  text-align: right;
+}
+</style>
+
+<script>
+const audio = document.getElementById('audio');
+const playBtn = document.getElementById('play-btn');
+const progress = document.getElementById('progress');
+const volume = document.getElementById('volume');
+const time = document.getElementById('time');
+
+let isPlaying = false;
+
+// Forzar autoplay al cargar la página
+window.addEventListener('load', () => {
+  audio.play().catch(() => {
+    console.log("El navegador bloqueó el autoplay hasta que haya interacción.");
+  });
+});
+
+// Play/pause
+playBtn.addEventListener('click', () => {
+    if(!isPlaying){
+        audio.play();
+        playBtn.textContent = '⏸️';
+        isPlaying = true;
+    } else {
+        audio.pause();
+        playBtn.textContent = '▶️';
+        isPlaying = false;
+    }
+});
+
+// Actualizar barra de progreso
+audio.addEventListener('timeupdate', () => {
+    const value = (audio.currentTime / audio.duration) * 100;
+    progress.value = value || 0;
+
+    const minutes = Math.floor(audio.currentTime / 60);
+    const seconds = Math.floor(audio.currentTime % 60);
+    time.textContent = `${minutes}:${seconds < 10 ? '0'+seconds : seconds}`;
+});
+
+// Controlar progreso manual
+progress.addEventListener('input', () => {
+    audio.currentTime = (progress.value / 100) * audio.duration;
+});
+
+// Controlar volumen
+volume.addEventListener('input', () => {
+    audio.volume = volume.value;
+});
+</script>
+
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
